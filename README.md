@@ -37,4 +37,4 @@ $ bundle exec rake rubocop
 $ tar czf ukol.tar.gz *
 ```
 ### Odevzdávárna
-https://is.muni.cz/auth/el/1433/podzim2015/PV249/ode/ode_ukol_3
+https://is.muni.cz/auth/el/1433/podzim2015/PV249/ode/ode_ukol_3/?fakulta=1421;obdobi=6463;predmet=870033

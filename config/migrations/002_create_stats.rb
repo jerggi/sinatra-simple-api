@@ -4,7 +4,7 @@ Sequel.migration do
   up do
     create_table(:Stats) do
       primary_key :id
-      foreign_key :link_id, :Stats, key: :id
+      foreign_key :link_id, :Links, key: :id
       String :like_count
       String :share_count
     end

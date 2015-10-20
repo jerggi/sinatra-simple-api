@@ -12,8 +12,6 @@ a href="/refresh" Obnov všechny výsledky
       tr
         th Doména
         th URL
-        th FB ID
-        th FB ID likes count
         th URL likes count
         th URL shares count
         th colspan='2' Akce
@@ -24,8 +22,6 @@ a href="/refresh" Obnov všechny výsledky
           td
             a href="/link/#{link[:id]}"
               = link[:url]
-          td = link[:facebook_id]
-          td = link[:facebook_likes]
           td = link[:likes_count]
           td = link[:shares_count]
           td

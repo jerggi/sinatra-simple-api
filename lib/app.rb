@@ -26,16 +26,13 @@ class FacebookStats < Sinatra::Base
     '404'
   end
 
+  # #GET - homepage - get all links and form for adding new link
   get '/' do
     get_all_links
     slim :index
   end
 
   # #POST - add link
-
-  # #GET - form with new link
-
-  # #GET - homepage - get all links and form for adding new link
 
   # #DELETE - delete link
 

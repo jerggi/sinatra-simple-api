@@ -20,13 +20,13 @@ a href="/refresh" Obnov všechny výsledky
         tr
           td = link[:domain]
           td
-            a href="/link/#{link[:id]}"
+            a href="/link/#{link[:id]}/stats"
               = link[:url]
-          td = link[:likes_count]
-          td = link[:shares_count]
+          td = link[:like_count]
+          td = link[:share_count]
           td
-            a href="/link/#{link[:id]}/edit" Edit
+            a href="/link/#{link[:id]+1}/edit" Edit
           td
-            form method='post' action='/link/#{link[:id]}' style='display: inline-block'
+            form method='post' action='/link/#{link[:id]+1}' style='display: inline-block'
               input type='hidden' value='delete' name='_method'
               input type='submit' value='x'

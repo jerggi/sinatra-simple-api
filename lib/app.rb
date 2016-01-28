@@ -43,12 +43,9 @@ class FacebookStats < Sinatra::Base
       result = Facebook.get_result url_input
       p_key = DB[:Links].insert(:url => url_input, :domain => result['host'])
       DB[:Stats].insert(:link_id => p_key, :like_count => result['like_count'], :share_count => result['share_count'])
-      all_links_and_stats
-      slim :links
-    else
-      all_links
-      slim :index
     end
+    all_links_and_stats
+    slim :links
   end
 
   # #DELETE - delete link
